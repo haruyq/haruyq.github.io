@@ -1,0 +1,151 @@
+body.fade-in {
+    animation: fadeIn 0.4s;
+}
+body.fade-out {
+    animation: fadeOut 0.3s forwards;
+}
+body {
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+body.fade-in {
+    opacity: 1;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+.about-button {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 36px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-left: 15px;
+}
+
+.works-button {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 12px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-left: 1px;
+}
+
+.about-button:hover, .about-button:focus, .works-button:hover, .works-button:focus {
+    transform: scale(1.08) rotate(-1deg);
+}
+
+header {
+    background: #2a428f;
+    box-shadow: 0 2px 8px rgb(0, 0, 0);
+    padding: 0 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header_title {
+    padding: 24px 32px 10px 16px;
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+}
+
+.header_title a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header_title h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    position: relative;
+    top: -5px;
+    word-break: break-all;
+    white-space: pre-line;
+}
+
+.navi {
+    align-items: center;
+    padding: 16px 32px 16px 16px;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.navi ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+}
+
+.navi img {
+    width: 36px;
+    height: 36px;
+    transition: transform 0.2s;
+}
+
+.navi img:hover {
+    transform: scale(1.08) rotate(-8deg);
+}
+
+.navi img.github {
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 0 0 0;
+    }
+    .header_title {
+        padding: 18px 12px 4px 12px;
+        width: 100%;
+    }
+    .header_title h1 {
+        font-size: 1.2rem;
+        top: 0;
+    }
+    .navi {
+        padding: 8px 12px 8px 12px;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .navi ul {
+        gap: 8px;
+    }
+    .navi img {
+        width: 28px;
+        height: 28px;
+    }
+}

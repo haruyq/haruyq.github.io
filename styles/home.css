@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Meiryo', sans-serif;
+    background: #000000;
+    color: #fff;
+    background-image: url('../img/VRChat_2025-06-19_20-52-35.869_1920x1080.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    backdrop-filter: brightness(0.8);
+}
+
+.left_title {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 480px;
+    max-width: 90vw;
+    background: rgba(0,0,0,0.65);
+    border-radius: 0 24px 24px 0;
+    padding: 48px 40px 36px 40px;
+    box-shadow: 4px 8px 32px #0007;
+    text-align: left;
+    backdrop-filter: blur(2px);
+    z-index: 10;
+}
+
+.left_title h1 {
+    font-size: 2.8rem;
+    color: #fff;
+    margin: 0 0 18px 0;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-shadow: 1px 2px 12px #0006;
+    line-height: 1.1;
+}
+
+.left_title p {
+    font-size: 1.25rem;
+    color: #e0e6ff;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-left: 5px;
+}
+
+@media (max-width: 900px) {
+    .left_title {
+        position: static;
+        width: 98vw;
+        max-width: 98vw;
+        border-radius: 0 0 18px 18px;
+        margin: 16px auto 0 auto;
+        padding: 24px 10vw 18px 6vw;
+        box-shadow: 0 4px 24px #0006;
+        text-align: left;
+    }
+    .left_title h1 {
+        font-size: 1.6rem;
+    }
+    .left_title p {
+        font-size: 1rem;
+    }
+    .left_button {
+        text-align: center;
+    }
+    .about-button {
+        width: 90%;
+        min-width: 120px;
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+}

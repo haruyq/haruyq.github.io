@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Meiryo', sans-serif;
+    background: #181c2a;
+    color: #fff;
+    min-height: 100vh;
+    background-image: url('../img/VRChat_2025-06-19_22-22-55.338_1920x1080.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: brightness(0.5);
+}
+
+.works-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.works-card {
+    background: rgba(0,0,0,0.65);
+    border-radius: 24px;
+    box-shadow: 0 4px 32px #0008;
+    padding: 48px 40px 36px 40px;
+    max-width: 900px;
+    width: 95vw;
+    text-align: center;
+    backdrop-filter: blur(2px);
+}
+
+.works-card h2 {
+    font-size: 2.1rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    color: #e0e6ff;
+    letter-spacing: 0.04em;
+}
+
+.works-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.work-item {
+    background: rgba(255,255,255,0.07);
+    border-radius: 16px;
+    box-shadow: 0 2px 12px #0005;
+    padding: 24px 20px 18px 20px;
+    min-width: 220px;
+    max-width: 320px;
+    flex: 1 1 260px;
+    margin-bottom: 8px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.work-item h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 8px 0;
+}
+.work-item p {
+    font-size: 1.05rem;
+    color: #e0e6ff;
+    margin: 0 0 12px 0;
+    line-height: 1.5;
+}
+.work-link {
+    color: #a6c8ff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: color 0.2s;
+    align-self: flex-end;
+}
+.work-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .works-card {
+        padding: 24px 4vw 18px 4vw;
+        max-width: 99vw;
+    }
+    .works-list {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .work-item {
+        max-width: 98vw;
+        min-width: 0;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .works-card h2 {
+        font-size: 1.3rem;
+    }
+    .work-item h3 {
+        font-size: 1.1rem;
+    }
+    .work-item p, .work-link {
+        font-size: 0.95rem;
+    }
+}
