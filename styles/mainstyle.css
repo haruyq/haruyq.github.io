@@ -122,6 +122,27 @@ header {
     top: -2px;
 }
 
+@media (max-width: 900px) {
+    .about-button {
+        font-size: 1.4rem;
+        padding: 0px 24px;
+        margin-left: 12px;
+    }
+    .works-button {
+        font-size: 1.4rem;
+        padding: 0px 10px;
+    }
+    .header_title {
+        padding: 20px 24px 8px 12px;
+    }
+    .header_title h1 {
+        font-size: 1.6rem;
+    }
+    .navi {
+        padding: 12px 24px 12px 12px;
+    }
+}
+
 @media (max-width: 700px) {
     header {
         flex-direction: column;
@@ -147,5 +168,42 @@ header {
     .navi img {
         width: 28px;
         height: 28px;
+    }
+    .about-button {
+        font-size: 1.2rem;
+        padding: 0px 18px;
+        margin-left: 8px;
+    }
+    .works-button {
+        font-size: 1.2rem;
+        padding: 0px 8px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header_title {
+        padding: 16px 8px 2px 8px;
+    }
+    .header_title h1 {
+        font-size: 1rem;
+    }
+    .navi {
+        padding: 6px 8px 6px 8px;
+    }
+    .navi ul {
+        gap: 6px;
+    }
+    .navi img {
+        width: 24px;
+        height: 24px;
+    }
+    .about-button {
+        font-size: 1rem;
+        padding: 0px 12px;
+        margin-left: 6px;
+    }
+    .works-button {
+        font-size: 1rem;
+        padding: 0px 6px;
     }
 }
