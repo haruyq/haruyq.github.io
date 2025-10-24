@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body { padding-top: 72px; }
+
+@media (max-width: 768px) {
+    html { scroll-padding-top: 68px; }
+    body { padding-top: 64px; }
+}
+
+.accs a {
+    color: #1a73e8;
+    text-decoration: underline;
+}
