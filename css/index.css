@@ -263,6 +263,7 @@
     .title,
     .about-title,
     .works-title,
+    .github-title,
     .contact-title {
         font-size: 3rem;
     }
@@ -275,12 +276,15 @@
     .sub-title { font-size: 1rem; }
     .about-title,
     .works-title,
+    .github-title,
     .contact-title { font-size: 2.25rem; }
     .about-sub-title,
     .works-sub-title,
+    .github-sub-title,
     .contact-sub-title { font-size: 0.95rem; }
     .about-text,
     .contact-text { font-size: 1rem; }
+    .github-text { font-size: 1rem; }
 
     .side-text { display: none; }
 
@@ -298,5 +302,6 @@
     .about-title,
     .works-title,
     .contact-title { font-size: 2rem; }
+    .github-title { font-size: 2rem; }
     .image img { height: 42vh; }
 }
