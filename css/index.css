@@ -252,6 +252,7 @@
     .title,
     .about-title,
     .works-title,
+    .github-title,
     .contact-title {
         font-size: 3.5rem;
     }
