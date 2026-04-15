@@ -20,7 +20,12 @@
     <body>
         <header>
             <nav class="navbar">
-                <ul class="header-links">
+                <button class="navbar-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="ナビゲーションを開閉">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="header-links" id="primary-menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="https://note.com/haruyq" target="_blank">Blog</a></li>
@@ -130,10 +135,10 @@
 
             <!-- Work 4 -->
             <article class="work-item">
-            <a class="thumb" href="https://github.com/haruyq/Wavelink" aria-label="Wavelinkを見る" target="_blank">
-                <img src="assets/works/wavelink_banner.png" alt="Wavelink banner">
+            <a class="thumb" href="https://haruyq.booth.pm/items/8152697" aria-label="HarukaTransを見る" target="_blank">
+                <img src="assets/works/harukatrans_banner.png" alt="HarukaTrans banner">
             </a>
-            <h3 class="title">Lavalink API Wrapper「Wavelink」</h3>
+            <h3 class="title">軽量自動翻訳アプリ「HarukaTrans」</h3>
             </article>
         </div>
         </section>
@@ -157,6 +162,7 @@
                 </p>
             </div>
         </div>
+        <script src="./scripts/navbar.js"></script>
         <script src="./scripts/gen_age.js"></script>
     </body>
 

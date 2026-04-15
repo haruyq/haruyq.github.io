@@ -137,6 +137,7 @@
     display: block;
     width: 100%;
     height: auto;
+    max-height: 290px;
     transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -304,4 +305,17 @@
     .contact-title { font-size: 2rem; }
     .github-title { font-size: 2rem; }
     .image img { height: 42vh; }
+}
+
+@media (max-width: 390px) {
+    .title { font-size: 1.5rem; }
+    .about-title,
+    .works-title,
+    .contact-title { font-size: 1.75rem; }
+    .github-title { font-size: 1.75rem; }
+    .github-logo { width: 30px; height: 30px; }
+    .github-text { font-size: 0.9rem; }
+    .image img { height: 35vh; }
+    .footer { padding: 40px 0; }
+    .footer-text { font-size: 0.8rem; }
 }

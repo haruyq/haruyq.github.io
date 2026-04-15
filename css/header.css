@@ -9,6 +9,14 @@ header {
     backdrop-filter: blur(5px);
 }
 
+.navbar {
+    position: relative;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
 .header-links {
     display: flex;
     justify-content: center;
@@ -58,9 +66,86 @@ header {
 
 @media (max-width: 768px) {
     header { padding: 10px 8px; }
-    .header-links { gap: 4px 6px; }
+
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .navbar-toggle {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 44px;
+        height: 44px;
+        padding: 0 11px;
+        margin-right: 5%;
+        border: 0;
+        border-radius: 8px;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .navbar-toggle span {
+        display: block;
+        width: 22px;
+        height: 1px;
+        background-color: #333333;
+        transition: transform 0.25s ease, opacity 0.25s ease;
+        transform-origin: center;
+    }
+
+    header.nav-open .navbar-toggle span:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    header.nav-open .navbar-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    header.nav-open .navbar-toggle span:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+    .header-links {
+        position: absolute;
+        top: calc(100% + 8px);
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2px;
+        margin: 0;
+        padding: 8px;
+        min-width: 180px;
+        border-radius: 10px;
+        background-color: #f8f8f8f2;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-8px);
+        pointer-events: none;
+        transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+    }
+
+    header.nav-open .header-links {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
     .header-links li { font-size: 0.95rem; }
-    .header-links a { padding: 8px 10px; }
+
+    .header-links a {
+        display: block;
+        padding: 8px 10px;
+        border-radius: 8px;
+    }
+
     .header-links a::after { bottom: 0rem; }
 }
 
