@@ -146,6 +146,16 @@ header {
         border-radius: 8px;
     }
 
+    header.nav-open .header-links a::after {
+        width: 0;
+        opacity: 0;
+        transition: none;
+    }
+
+    header.nav-open .header-links a:hover::after {
+        width: 0;
+    }
+
     .header-links a::after { bottom: 0rem; }
 }
 
